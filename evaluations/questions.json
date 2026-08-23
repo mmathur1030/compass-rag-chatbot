@@ -1,0 +1,137 @@
+[
+  {
+    "id": "hr-annual-leave",
+    "category": "direct",
+    "question": "How many paid annual leave days do full-time employees receive?",
+    "expected_namespaces": ["HR"],
+    "expected_sources": ["hr_policy.txt"],
+    "expected_keywords": ["15 days", "paid annual leave"],
+    "answerable": true
+  },
+  {
+    "id": "hr-cross-border-remote",
+    "category": "direct",
+    "question": "Can an employee work remotely from another country?",
+    "expected_namespaces": ["HR"],
+    "expected_sources": ["hr_policy.txt"],
+    "expected_keywords": ["written approval", "HR", "Legal"],
+    "answerable": true
+  },
+  {
+    "id": "hr-parental-leave",
+    "category": "direct",
+    "question": "How much fully paid leave does a primary caregiver receive?",
+    "expected_namespaces": ["HR"],
+    "expected_sources": ["hr_policy.txt"],
+    "expected_keywords": ["16 weeks", "fully paid"],
+    "answerable": true
+  },
+  {
+    "id": "tech-rate-limit",
+    "category": "exact-term",
+    "question": "What should a client do after receiving HTTP 429?",
+    "expected_namespaces": ["Technical"],
+    "expected_sources": ["tech_docs.txt"],
+    "expected_keywords": ["Retry-After", "exponential backoff", "jitter"],
+    "answerable": true
+  },
+  {
+    "id": "tech-webhook-signature",
+    "category": "exact-term",
+    "question": "How must an ACME webhook payload be authenticated?",
+    "expected_namespaces": ["Technical"],
+    "expected_sources": ["tech_docs.txt"],
+    "expected_keywords": ["HMAC-SHA256", "X-ACME-Signature", "rejected"],
+    "answerable": true
+  },
+  {
+    "id": "tech-production-deploy",
+    "category": "direct",
+    "question": "What happens before a production deployment receives full traffic?",
+    "expected_namespaces": ["Technical"],
+    "expected_sources": ["tech_docs.txt"],
+    "expected_keywords": ["canary", "10%", "10 minutes", "0.1%"],
+    "answerable": true
+  },
+  {
+    "id": "compliance-data-request",
+    "category": "direct",
+    "question": "How quickly must ACME fulfill a GDPR data subject request?",
+    "expected_namespaces": ["Compliance"],
+    "expected_sources": ["compliance_manual.txt"],
+    "expected_keywords": ["30 calendar days", "identity verification"],
+    "answerable": true
+  },
+  {
+    "id": "compliance-access-revocation",
+    "category": "direct",
+    "question": "How soon must a terminated employee's system access be revoked?",
+    "expected_namespaces": ["Compliance"],
+    "expected_sources": ["compliance_manual.txt"],
+    "expected_keywords": ["2 hours", "HR notification"],
+    "answerable": true
+  },
+  {
+    "id": "compliance-critical-finding",
+    "category": "direct",
+    "question": "What is the remediation deadline for a critical internal audit finding?",
+    "expected_namespaces": ["Compliance"],
+    "expected_sources": ["compliance_manual.txt"],
+    "expected_keywords": ["30 days", "Critical"],
+    "answerable": true
+  },
+  {
+    "id": "cross-p1-response",
+    "category": "cross-document",
+    "question": "Compare the documented response expectations for a P1 incident across the technical SLA and compliance incident policy.",
+    "expected_namespaces": ["Technical", "Compliance"],
+    "expected_sources": ["tech_docs.txt", "compliance_manual.txt"],
+    "expected_keywords": ["15 minutes", "containment", "1 hour"],
+    "answerable": true
+  },
+  {
+    "id": "cross-credential-security",
+    "category": "cross-document",
+    "question": "What do the technical and security policies require for protecting application credentials and privileged access?",
+    "expected_namespaces": ["Technical", "Compliance"],
+    "expected_sources": ["tech_docs.txt", "compliance_manual.txt"],
+    "expected_keywords": ["environment variables", "MFA", "least privilege"],
+    "answerable": true
+  },
+  {
+    "id": "ambiguous-retention",
+    "category": "ambiguous",
+    "question": "How long does ACME keep records?",
+    "expected_namespaces": ["Compliance"],
+    "expected_sources": ["compliance_manual.txt"],
+    "expected_keywords": ["depends", "years"],
+    "answerable": true
+  },
+  {
+    "id": "ambiguous-work-home",
+    "category": "ambiguous",
+    "question": "Can I work from home?",
+    "expected_namespaces": ["HR"],
+    "expected_sources": ["hr_policy.txt"],
+    "expected_keywords": ["3 days", "6-month", "manager"],
+    "answerable": true
+  },
+  {
+    "id": "unknown-cafeteria",
+    "category": "unanswerable",
+    "question": "What time does the employee cafeteria open on Saturdays?",
+    "expected_namespaces": [],
+    "expected_sources": [],
+    "expected_keywords": [],
+    "answerable": false
+  },
+  {
+    "id": "unknown-travel",
+    "category": "unanswerable",
+    "question": "What is the maximum hotel reimbursement for business travel?",
+    "expected_namespaces": [],
+    "expected_sources": [],
+    "expected_keywords": [],
+    "answerable": false
+  }
+]

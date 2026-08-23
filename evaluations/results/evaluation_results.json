@@ -1,0 +1,606 @@
+{
+  "summary": {
+    "questions": 15,
+    "router_accuracy": 1,
+    "source_hit_rate": 1,
+    "answer_keyword_coverage": 0.8974358974358975,
+    "refusal_accuracy": 1,
+    "citation_validity": 1,
+    "faithfulness": 1.0,
+    "average_latency_seconds": 5.971172447005908,
+    "p95_latency_seconds": 13.580570041027386,
+    "passed": 15
+  },
+  "results": [
+    {
+      "id": "hr-annual-leave",
+      "category": "direct",
+      "question": "How many paid annual leave days do full-time employees receive?",
+      "expected_namespaces": [
+        "HR"
+      ],
+      "expected_sources": [
+        "hr_policy.txt"
+      ],
+      "expected_keywords": [
+        "15 days",
+        "paid annual leave"
+      ],
+      "answerable": true,
+      "selected_namespaces": [
+        "HR"
+      ],
+      "route_correct": true,
+      "retrieved_sources": [
+        "hr_policy.txt"
+      ],
+      "source_hit": true,
+      "retrieval_score": 0.9974788,
+      "refused": false,
+      "refusal_correct": true,
+      "answer": "Full\u2011time employees are entitled to **15 days of paid annual leave per calendar year**[1].",
+      "keyword_coverage": 1.0,
+      "citation_valid": true,
+      "faithfulness": 1.0,
+      "faithfulness_explanation": "The answer states that full\u2011time employees are entitled to 15 days of paid annual leave per calendar year, which matches the policy manual that explicitly says the same. No other claims are made, and there is no contradiction. Therefore the answer is fully supported by the context.",
+      "latency_seconds": 1.6434737909585238,
+      "failure_cause": null,
+      "retrieved_context": [
+        "ACME CORPORATION \u2014 HUMAN RESOURCES POLICY MANUAL\nVersion 4.2 | Effective Date: January 1, 2024\n=================================================\n\n1. ANNUAL LEAVE POLICY\n----------------------\nFull-time employees are entitled to 15 days of paid annual leave per calendar year.\nPart-time employees receive leave on a pro-rated basis proportional to their working hours.\nAnnual leave accrues at 1.25 days per month. A maximum of 5 unused days may be carried\nover to the following year. Any balance above 5 days is forfeited on December 31st.\nEmployees must request annual leave at least 5 business days in advance via the HR portal.\nLeave during the last two weeks of Q4 (December 17\u201331) requires manager approval due to\nend-of-year deadlines. Leave cannot be taken during the employee's first 90 days of employment.",
+        "ACME CORPORATION \u2014 HUMAN RESOURCES POLICY MANUAL\nVersion 4.2 | Effective Date: January 1, 2024\n=================================================\n\n1. ANNUAL LEAVE POLICY\n----------------------\nFull-time employees are entitled to 15 days of paid annual leave per calendar year.\nPart-time employees receive leave on a pro-rated basis proportional to their working hours.\nAnnual leave accrues at 1.25 days per month. A maximum of 5 unused days may be carried\nover to the following year. Any balance above 5 days is forfeited on December 31st.\nEmployees must request annual leave at least 5 business days in advance via the HR portal.\nLeave during the last two weeks of Q4 (December 17\u201331) requires manager approval due to\nend-of-year deadlines. Leave cannot be taken during the employee's first 90 days of employment.",
+        "2. SICK LEAVE POLICY\n--------------------\nEmployees are entitled to 10 days of paid sick leave per calendar year. Sick leave does not\ncarry over to the following year. For absences exceeding 3 consecutive days, a doctor's\ncertificate must be submitted to HR within 5 business days. Sick leave may be used for the\nemployee's own illness or to care for an immediate family member (spouse, child, parent).\n\n3. MATERNITY AND PATERNITY LEAVE\n---------------------------------\nPrimary caregiver: 16 weeks of fully paid maternity/adoption leave.\nSecondary caregiver: 4 weeks of fully paid paternity/adoption leave.\nEmployees must provide at least 8 weeks' written notice before the expected leave start date.\nLeave may begin up to 4 weeks before the expected birth/adoption date.",
+        "2. SICK LEAVE POLICY\n--------------------\nEmployees are entitled to 10 days of paid sick leave per calendar year. Sick leave does not\ncarry over to the following year. For absences exceeding 3 consecutive days, a doctor's\ncertificate must be submitted to HR within 5 business days. Sick leave may be used for the\nemployee's own illness or to care for an immediate family member (spouse, child, parent).\n\n3. MATERNITY AND PATERNITY LEAVE\n---------------------------------\nPrimary caregiver: 16 weeks of fully paid maternity/adoption leave.\nSecondary caregiver: 4 weeks of fully paid paternity/adoption leave.\nEmployees must provide at least 8 weeks' written notice before the expected leave start date.\nLeave may begin up to 4 weeks before the expected birth/adoption date."
+      ]
+    },
+    {
+      "id": "hr-cross-border-remote",
+      "category": "direct",
+      "question": "Can an employee work remotely from another country?",
+      "expected_namespaces": [
+        "HR"
+      ],
+      "expected_sources": [
+        "hr_policy.txt"
+      ],
+      "expected_keywords": [
+        "written approval",
+        "HR",
+        "Legal"
+      ],
+      "answerable": true,
+      "selected_namespaces": [
+        "HR"
+      ],
+      "route_correct": true,
+      "retrieved_sources": [
+        "hr_policy.txt"
+      ],
+      "source_hit": true,
+      "retrieval_score": 0.98975134,
+      "refused": false,
+      "refusal_correct": true,
+      "answer": "Employees are not allowed to work remotely from outside the country in which they are employed unless they first obtain prior written approval from HR and Legal. This is stated in the remote\u2011work policy. [1]",
+      "keyword_coverage": 1.0,
+      "citation_valid": true,
+      "faithfulness": 1.0,
+      "faithfulness_explanation": "The answer correctly states that employees cannot work remotely from outside their country of employment without prior written approval from HR and Legal, which is directly supported by the remote work policy text in the context. All factual claims in the answer are present in the supplied context.",
+      "latency_seconds": 1.1077912080218084,
+      "failure_cause": null,
+      "retrieved_context": [
+        "4. REMOTE WORK POLICY\n---------------------\nEmployees may work remotely up to 3 days per week after completing their 6-month probationary\nperiod. Remote work days must be agreed upon with the direct manager in advance.\nThe employee is responsible for maintaining a safe, ergonomic, and distraction-free workspace.\nCore working hours of 10:00 AM \u2013 3:00 PM (local time) must be maintained regardless of location.\nEmployees working remotely must be reachable via Slack and respond within 30 minutes during\ncore hours. Fully remote arrangements (5 days/week) require VP-level approval and are reviewed\nannually. Employees cannot work remotely from outside their country of employment without\nprior written approval from HR and Legal.",
+        "4. REMOTE WORK POLICY\n---------------------\nEmployees may work remotely up to 3 days per week after completing their 6-month probationary\nperiod. Remote work days must be agreed upon with the direct manager in advance.\nThe employee is responsible for maintaining a safe, ergonomic, and distraction-free workspace.\nCore working hours of 10:00 AM \u2013 3:00 PM (local time) must be maintained regardless of location.\nEmployees working remotely must be reachable via Slack and respond within 30 minutes during\ncore hours. Fully remote arrangements (5 days/week) require VP-level approval and are reviewed\nannually. Employees cannot work remotely from outside their country of employment without\nprior written approval from HR and Legal.",
+        "Employee Assistance Program (EAP): All employees have access to 6 free counseling sessions\nper year through the EAP. Contact: eap@acme.com or 1-800-555-HELP.\n\n8. ONBOARDING PROCESS\n----------------------\nNew employees go through a structured 30-60-90 day onboarding plan:\n- Day 1: IT setup, security training, HR orientation\n- Week 1: Meet the team, review team OKRs, complete compliance modules\n- Month 1: Shadow key meetings, complete assigned onboarding tasks\n- Day 60: First check-in meeting with manager and HR\n- Day 90: Probationary period ends; remote work eligibility begins\n\n9. DISCIPLINARY POLICY\n-----------------------\nACME follows a progressive disciplinary process:\nStep 1: Verbal Warning (documented in HR system)\nStep 2: Written Warning\nStep 3: Final Written Warning / Suspension (with or without pay)\nStep 4: Termination\nSerious misconduct (fraud, violence, data theft) may result in immediate termination\nwithout progression through the steps above.",
+        "Employee Assistance Program (EAP): All employees have access to 6 free counseling sessions\nper year through the EAP. Contact: eap@acme.com or 1-800-555-HELP.\n\n8. ONBOARDING PROCESS\n----------------------\nNew employees go through a structured 30-60-90 day onboarding plan:\n- Day 1: IT setup, security training, HR orientation\n- Week 1: Meet the team, review team OKRs, complete compliance modules\n- Month 1: Shadow key meetings, complete assigned onboarding tasks\n- Day 60: First check-in meeting with manager and HR\n- Day 90: Probationary period ends; remote work eligibility begins\n\n9. DISCIPLINARY POLICY\n-----------------------\nACME follows a progressive disciplinary process:\nStep 1: Verbal Warning (documented in HR system)\nStep 2: Written Warning\nStep 3: Final Written Warning / Suspension (with or without pay)\nStep 4: Termination\nSerious misconduct (fraud, violence, data theft) may result in immediate termination\nwithout progression through the steps above."
+      ]
+    },
+    {
+      "id": "hr-parental-leave",
+      "category": "direct",
+      "question": "How much fully paid leave does a primary caregiver receive?",
+      "expected_namespaces": [
+        "HR"
+      ],
+      "expected_sources": [
+        "hr_policy.txt"
+      ],
+      "expected_keywords": [
+        "16 weeks",
+        "fully paid"
+      ],
+      "answerable": true,
+      "selected_namespaces": [
+        "HR"
+      ],
+      "route_correct": true,
+      "retrieved_sources": [
+        "hr_policy.txt"
+      ],
+      "source_hit": true,
+      "retrieval_score": 0.93318766,
+      "refused": false,
+      "refusal_correct": true,
+      "answer": "A primary caregiver is entitled to **16\u202fweeks of fully paid maternity/adoption leave**[1].",
+      "keyword_coverage": 1.0,
+      "citation_valid": true,
+      "faithfulness": 1.0,
+      "faithfulness_explanation": "The answer states that a primary caregiver is entitled to 16 weeks of fully paid maternity/adoption leave, which directly matches the policy text in the context that specifies the same entitlement for a primary caregiver. All factual claims in the answer are supported by the context.",
+      "latency_seconds": 1.2501646250020713,
+      "failure_cause": null,
+      "retrieved_context": [
+        "2. SICK LEAVE POLICY\n--------------------\nEmployees are entitled to 10 days of paid sick leave per calendar year. Sick leave does not\ncarry over to the following year. For absences exceeding 3 consecutive days, a doctor's\ncertificate must be submitted to HR within 5 business days. Sick leave may be used for the\nemployee's own illness or to care for an immediate family member (spouse, child, parent).\n\n3. MATERNITY AND PATERNITY LEAVE\n---------------------------------\nPrimary caregiver: 16 weeks of fully paid maternity/adoption leave.\nSecondary caregiver: 4 weeks of fully paid paternity/adoption leave.\nEmployees must provide at least 8 weeks' written notice before the expected leave start date.\nLeave may begin up to 4 weeks before the expected birth/adoption date.",
+        "2. SICK LEAVE POLICY\n--------------------\nEmployees are entitled to 10 days of paid sick leave per calendar year. Sick leave does not\ncarry over to the following year. For absences exceeding 3 consecutive days, a doctor's\ncertificate must be submitted to HR within 5 business days. Sick leave may be used for the\nemployee's own illness or to care for an immediate family member (spouse, child, parent).\n\n3. MATERNITY AND PATERNITY LEAVE\n---------------------------------\nPrimary caregiver: 16 weeks of fully paid maternity/adoption leave.\nSecondary caregiver: 4 weeks of fully paid paternity/adoption leave.\nEmployees must provide at least 8 weeks' written notice before the expected leave start date.\nLeave may begin up to 4 weeks before the expected birth/adoption date.",
+        "ACME CORPORATION \u2014 HUMAN RESOURCES POLICY MANUAL\nVersion 4.2 | Effective Date: January 1, 2024\n=================================================\n\n1. ANNUAL LEAVE POLICY\n----------------------\nFull-time employees are entitled to 15 days of paid annual leave per calendar year.\nPart-time employees receive leave on a pro-rated basis proportional to their working hours.\nAnnual leave accrues at 1.25 days per month. A maximum of 5 unused days may be carried\nover to the following year. Any balance above 5 days is forfeited on December 31st.\nEmployees must request annual leave at least 5 business days in advance via the HR portal.\nLeave during the last two weeks of Q4 (December 17\u201331) requires manager approval due to\nend-of-year deadlines. Leave cannot be taken during the employee's first 90 days of employment.",
+        "ACME CORPORATION \u2014 HUMAN RESOURCES POLICY MANUAL\nVersion 4.2 | Effective Date: January 1, 2024\n=================================================\n\n1. ANNUAL LEAVE POLICY\n----------------------\nFull-time employees are entitled to 15 days of paid annual leave per calendar year.\nPart-time employees receive leave on a pro-rated basis proportional to their working hours.\nAnnual leave accrues at 1.25 days per month. A maximum of 5 unused days may be carried\nover to the following year. Any balance above 5 days is forfeited on December 31st.\nEmployees must request annual leave at least 5 business days in advance via the HR portal.\nLeave during the last two weeks of Q4 (December 17\u201331) requires manager approval due to\nend-of-year deadlines. Leave cannot be taken during the employee's first 90 days of employment."
+      ]
+    },
+    {
+      "id": "tech-rate-limit",
+      "category": "exact-term",
+      "question": "What should a client do after receiving HTTP 429?",
+      "expected_namespaces": [
+        "Technical"
+      ],
+      "expected_sources": [
+        "tech_docs.txt"
+      ],
+      "expected_keywords": [
+        "Retry-After",
+        "exponential backoff",
+        "jitter"
+      ],
+      "answerable": true,
+      "selected_namespaces": [
+        "Technical"
+      ],
+      "route_correct": true,
+      "retrieved_sources": [
+        "tech_docs.txt"
+      ],
+      "source_hit": true,
+      "retrieval_score": 0.16478509,
+      "refused": false,
+      "refusal_correct": true,
+      "answer": "After receiving an HTTP\u202f429 (Too Many Requests) the client should:\n\n1. **Read the `Retry-After` header** to know how many seconds to wait before attempting another request.  \n2. **Pause for that duration** and then retry the request.  \n3. **Use exponential back\u2011off with jitter** for any subsequent retries, rather than retrying immediately.  \n4. **Do not immediately retry** on the first 429 response; instead follow the back\u2011off strategy.  \n\nThis approach ensures compliance with the ACME API\u2019s rate\u2011limiting policy and avoids further throttling. [1]",
+      "keyword_coverage": 0.6666666666666666,
+      "citation_valid": true,
+      "faithfulness": 1.0,
+      "faithfulness_explanation": "All factual claims in the answer are directly supported by the provided context. The answer correctly states that the API returns a 429 with a Retry-After header, that the client should pause for that duration, use exponential backoff with jitter for subsequent retries, and not retry immediately on the first 429. No unsupported or contradictory statements are present.",
+      "latency_seconds": 1.4820755000109784,
+      "failure_cause": null,
+      "retrieved_context": [
+        "Tokens expire after 1 hour. Refresh tokens are valid for 30 days. Do not expose secrets\nin client-side code. Use environment variables to store credentials.\n\n2. RATE LIMITING\n----------------\nThe ACME API enforces rate limits to ensure fair usage:\n- Standard tier: 100 requests per minute per API key\n- Professional tier: 500 requests per minute per API key\n- Enterprise tier: 2,000 requests per minute per API key\n\nRate limit headers are included in every response:\n  X-RateLimit-Limit: 100\n  X-RateLimit-Remaining: 87\n  X-RateLimit-Reset: 1711900800   (Unix timestamp when limit resets)\n\nWhen the rate limit is exceeded, the API returns HTTP 429 Too Many Requests with a\nRetry-After header indicating the number of seconds to wait before retrying.\nImplement exponential backoff with jitter for retry logic. Do not immediately retry on 429.",
+        "Tokens expire after 1 hour. Refresh tokens are valid for 30 days. Do not expose secrets\nin client-side code. Use environment variables to store credentials.\n\n2. RATE LIMITING\n----------------\nThe ACME API enforces rate limits to ensure fair usage:\n- Standard tier: 100 requests per minute per API key\n- Professional tier: 500 requests per minute per API key\n- Enterprise tier: 2,000 requests per minute per API key\n\nRate limit headers are included in every response:\n  X-RateLimit-Limit: 100\n  X-RateLimit-Remaining: 87\n  X-RateLimit-Reset: 1711900800   (Unix timestamp when limit resets)\n\nWhen the rate limit is exceeded, the API returns HTTP 429 Too Many Requests with a\nRetry-After header indicating the number of seconds to wait before retrying.\nImplement exponential backoff with jitter for retry logic. Do not immediately retry on 429.",
+        "3. ERROR CODES REFERENCE\n------------------------\n400 Bad Request         \u2014 The request is malformed or missing required parameters.\n                          Check request body and query parameters.\n401 Unauthorized        \u2014 Missing or invalid Bearer token. Re-authenticate.\n403 Forbidden           \u2014 Valid token but insufficient permissions for this resource.\n                          Check the scopes granted to your application.\n404 Not Found           \u2014 The requested resource does not exist. Verify the endpoint URL.\n409 Conflict            \u2014 The resource already exists or there is a state conflict.\n422 Unprocessable Entity \u2014 Request is well-formed but contains semantic errors.\n429 Too Many Requests   \u2014 Rate limit exceeded. See X-RateLimit-Reset header.\n500 Internal Server Error \u2014 Unexpected server error. Retry with exponential backoff.\n502 Bad Gateway         \u2014 Upstream service unavailable. Retry after 30 seconds.",
+        "3. ERROR CODES REFERENCE\n------------------------\n400 Bad Request         \u2014 The request is malformed or missing required parameters.\n                          Check request body and query parameters.\n401 Unauthorized        \u2014 Missing or invalid Bearer token. Re-authenticate.\n403 Forbidden           \u2014 Valid token but insufficient permissions for this resource.\n                          Check the scopes granted to your application.\n404 Not Found           \u2014 The requested resource does not exist. Verify the endpoint URL.\n409 Conflict            \u2014 The resource already exists or there is a state conflict.\n422 Unprocessable Entity \u2014 Request is well-formed but contains semantic errors.\n429 Too Many Requests   \u2014 Rate limit exceeded. See X-RateLimit-Reset header.\n500 Internal Server Error \u2014 Unexpected server error. Retry with exponential backoff.\n502 Bad Gateway         \u2014 Upstream service unavailable. Retry after 30 seconds."
+      ]
+    },
+    {
+      "id": "tech-webhook-signature",
+      "category": "exact-term",
+      "question": "How must an ACME webhook payload be authenticated?",
+      "expected_namespaces": [
+        "Technical"
+      ],
+      "expected_sources": [
+        "tech_docs.txt"
+      ],
+      "expected_keywords": [
+        "HMAC-SHA256",
+        "X-ACME-Signature",
+        "rejected"
+      ],
+      "answerable": true,
+      "selected_namespaces": [
+        "Technical"
+      ],
+      "route_correct": true,
+      "retrieved_sources": [
+        "tech_docs.txt"
+      ],
+      "source_hit": true,
+      "retrieval_score": 0.94427973,
+      "refused": false,
+      "refusal_correct": true,
+      "answer": "ACME webhooks are authenticated by signing each payload with HMAC\u2011SHA256.  \nYour server must read the `X\u2011ACME\u2011Signature` header, compute the HMAC of the received\npayload using the shared webhook secret, and compare the two values. If the\nsignature does not match, the webhook should be rejected.  \n\n[1]",
+      "keyword_coverage": 1.0,
+      "citation_valid": true,
+      "faithfulness": 1.0,
+      "faithfulness_explanation": "The answer accurately reflects the context: it states that webhook payloads are signed with HMAC\u2011SHA256, that the X\u2011ACME\u2011Signature header should be validated against the webhook secret, and that mismatched signatures should lead to rejection. All claims are directly supported by the provided text.",
+      "latency_seconds": 2.4848422500072047,
+      "failure_cause": null,
+      "retrieved_context": [
+        "7. WEBHOOKS\n-----------\nACME supports webhooks for real-time event notifications. Configure webhook endpoints at:\n  https://developer.acme.com/webhooks\n\nSupported event types: user.created, user.updated, data.processed, payment.completed,\npayment.failed, subscription.renewed, subscription.cancelled.\n\nAll webhook payloads are signed with HMAC-SHA256. Validate the X-ACME-Signature header\nagainst your webhook secret to ensure payload authenticity. Unverified webhooks should\nbe rejected. Webhook delivery is retried up to 5 times with exponential backoff if your\nendpoint returns a non-2xx status code.\n\n8. SDK REFERENCE\n----------------\nOfficial SDKs are available for:\n  - Python:     pip install acme-sdk\n  - JavaScript: npm install @acme/sdk\n  - Java:       Maven: com.acme:acme-sdk:2.3.0\n  - Go:         go get github.com/acme/acme-go-sdk",
+        "7. WEBHOOKS\n-----------\nACME supports webhooks for real-time event notifications. Configure webhook endpoints at:\n  https://developer.acme.com/webhooks\n\nSupported event types: user.created, user.updated, data.processed, payment.completed,\npayment.failed, subscription.renewed, subscription.cancelled.\n\nAll webhook payloads are signed with HMAC-SHA256. Validate the X-ACME-Signature header\nagainst your webhook secret to ensure payload authenticity. Unverified webhooks should\nbe rejected. Webhook delivery is retried up to 5 times with exponential backoff if your\nendpoint returns a non-2xx status code.\n\n8. SDK REFERENCE\n----------------\nOfficial SDKs are available for:\n  - Python:     pip install acme-sdk\n  - JavaScript: npm install @acme/sdk\n  - Java:       Maven: com.acme:acme-sdk:2.3.0\n  - Go:         go get github.com/acme/acme-go-sdk",
+        "ACME PLATFORM \u2014 TECHNICAL DOCUMENTATION\nVersion 3.1 | Last Updated: March 2024\n=======================================\n\n1. API AUTHENTICATION\n---------------------\nThe ACME API uses OAuth 2.0 with Bearer Token authentication. All API requests must include\na valid Bearer token in the Authorization header:\n\n    Authorization: Bearer <your_access_token>\n\nTo obtain an access token:\n  1. Register your application at https://developer.acme.com/apps\n  2. Note your CLIENT_ID and CLIENT_SECRET\n  3. Make a POST request to https://api.acme.com/oauth/token with:\n       grant_type=client_credentials\n       client_id=<CLIENT_ID>\n       client_secret=<CLIENT_SECRET>\n  4. The response returns an access_token (valid for 3600 seconds) and a refresh_token.\n  5. Use the refresh_token to obtain a new access_token before expiry.\n\nTokens expire after 1 hour. Refresh tokens are valid for 30 days. Do not expose secrets\nin client-side code. Use environment variables to store credentials.",
+        "ACME PLATFORM \u2014 TECHNICAL DOCUMENTATION\nVersion 3.1 | Last Updated: March 2024\n=======================================\n\n1. API AUTHENTICATION\n---------------------\nThe ACME API uses OAuth 2.0 with Bearer Token authentication. All API requests must include\na valid Bearer token in the Authorization header:\n\n    Authorization: Bearer <your_access_token>\n\nTo obtain an access token:\n  1. Register your application at https://developer.acme.com/apps\n  2. Note your CLIENT_ID and CLIENT_SECRET\n  3. Make a POST request to https://api.acme.com/oauth/token with:\n       grant_type=client_credentials\n       client_id=<CLIENT_ID>\n       client_secret=<CLIENT_SECRET>\n  4. The response returns an access_token (valid for 3600 seconds) and a refresh_token.\n  5. Use the refresh_token to obtain a new access_token before expiry.\n\nTokens expire after 1 hour. Refresh tokens are valid for 30 days. Do not expose secrets\nin client-side code. Use environment variables to store credentials."
+      ]
+    },
+    {
+      "id": "tech-production-deploy",
+      "category": "direct",
+      "question": "What happens before a production deployment receives full traffic?",
+      "expected_namespaces": [
+        "Technical"
+      ],
+      "expected_sources": [
+        "tech_docs.txt"
+      ],
+      "expected_keywords": [
+        "canary",
+        "10%",
+        "10 minutes",
+        "0.1%"
+      ],
+      "answerable": true,
+      "selected_namespaces": [
+        "Technical"
+      ],
+      "route_correct": true,
+      "retrieved_sources": [
+        "tech_docs.txt"
+      ],
+      "source_hit": true,
+      "retrieval_score": 0.10502681,
+      "refused": false,
+      "refusal_correct": true,
+      "answer": "Before a production deployment receives full traffic, ACME performs a **canary deployment**: the new version is exposed to 10\u202f% of traffic for 10\u202fminutes. After that period, the system checks the error rate; if it is below\u202f0.1\u202f% the rollout is completed, otherwise the deployment is automatically rolled back. [1]",
+      "keyword_coverage": 1.0,
+      "citation_valid": true,
+      "faithfulness": 1.0,
+      "faithfulness_explanation": "The answer accurately reflects the deployment steps described in the context: it mentions a 10% traffic canary for 10 minutes and the error rate threshold of 0.1% for full rollout or rollback. All factual claims are directly supported by the provided text.",
+      "latency_seconds": 2.4659651659894735,
+      "failure_cause": null,
+      "retrieved_context": [
+        "5. DEPLOYMENT GUIDE\n-------------------\nACME uses a GitOps CI/CD pipeline via GitHub Actions.\n\nDeployment environments:\n  - dev: Deployed on every push to any feature branch\n  - staging: Deployed on merge to the `develop` branch\n  - production: Deployed on merge to `main` after passing all checks\n\nDeployment steps (automated):\n  1. Code push triggers GitHub Actions workflow\n  2. Unit tests run (must pass 100%)\n  3. Integration tests run against a sandboxed environment\n  4. Docker image built and pushed to AWS ECR\n  5. Helm chart updated with new image tag\n  6. ArgoCD syncs the new Helm chart to the target environment\n  7. Canary deployment: 10% traffic to new version for 10 minutes\n  8. If error rate < 0.1%, full rollout; otherwise, automatic rollback\n\nManual deployments to production require a change request ticket in Jira and\napproval from two senior engineers.",
+        "5. DEPLOYMENT GUIDE\n-------------------\nACME uses a GitOps CI/CD pipeline via GitHub Actions.\n\nDeployment environments:\n  - dev: Deployed on every push to any feature branch\n  - staging: Deployed on merge to the `develop` branch\n  - production: Deployed on merge to `main` after passing all checks\n\nDeployment steps (automated):\n  1. Code push triggers GitHub Actions workflow\n  2. Unit tests run (must pass 100%)\n  3. Integration tests run against a sandboxed environment\n  4. Docker image built and pushed to AWS ECR\n  5. Helm chart updated with new image tag\n  6. ArgoCD syncs the new Helm chart to the target environment\n  7. Canary deployment: 10% traffic to new version for 10 minutes\n  8. If error rate < 0.1%, full rollout; otherwise, automatic rollback\n\nManual deployments to production require a change request ticket in Jira and\napproval from two senior engineers.",
+        "Manual deployments to production require a change request ticket in Jira and\napproval from two senior engineers.\n\n6. DATABASE SCHEMA OVERVIEW\n----------------------------\nPrimary tables in the ACME PostgreSQL database:\n  users           \u2014 id, email, name, role, created_at, last_login\n  organizations   \u2014 id, name, plan_tier, created_at\n  api_keys        \u2014 id, user_id, org_id, key_hash, scopes, rate_limit_tier\n  events          \u2014 id, type, payload, user_id, created_at (partitioned by month)\n  audit_logs      \u2014 id, action, actor_id, resource_type, resource_id, timestamp\n\nThe `events` table is partitioned monthly for query performance. Indexes exist on\nuser_id, org_id, and created_at columns across all major tables.\n\n7. WEBHOOKS\n-----------\nACME supports webhooks for real-time event notifications. Configure webhook endpoints at:\n  https://developer.acme.com/webhooks",
+        "Manual deployments to production require a change request ticket in Jira and\napproval from two senior engineers.\n\n6. DATABASE SCHEMA OVERVIEW\n----------------------------\nPrimary tables in the ACME PostgreSQL database:\n  users           \u2014 id, email, name, role, created_at, last_login\n  organizations   \u2014 id, name, plan_tier, created_at\n  api_keys        \u2014 id, user_id, org_id, key_hash, scopes, rate_limit_tier\n  events          \u2014 id, type, payload, user_id, created_at (partitioned by month)\n  audit_logs      \u2014 id, action, actor_id, resource_type, resource_id, timestamp\n\nThe `events` table is partitioned monthly for query performance. Indexes exist on\nuser_id, org_id, and created_at columns across all major tables.\n\n7. WEBHOOKS\n-----------\nACME supports webhooks for real-time event notifications. Configure webhook endpoints at:\n  https://developer.acme.com/webhooks"
+      ]
+    },
+    {
+      "id": "compliance-data-request",
+      "category": "direct",
+      "question": "How quickly must ACME fulfill a GDPR data subject request?",
+      "expected_namespaces": [
+        "Compliance"
+      ],
+      "expected_sources": [
+        "compliance_manual.txt"
+      ],
+      "expected_keywords": [
+        "30 calendar days",
+        "identity verification"
+      ],
+      "answerable": true,
+      "selected_namespaces": [
+        "Compliance"
+      ],
+      "route_correct": true,
+      "retrieved_sources": [
+        "compliance_manual.txt"
+      ],
+      "source_hit": true,
+      "retrieval_score": 0.98544043,
+      "refused": false,
+      "refusal_correct": true,
+      "answer": "ACME must fulfill a GDPR data\u2011subject request within **30 calendar days** of receipt of the request. [1]",
+      "keyword_coverage": 0.5,
+      "citation_valid": true,
+      "faithfulness": 1.0,
+      "faithfulness_explanation": "The answer states that ACME must fulfill a GDPR data\u2011subject request within 30 calendar days, which is exactly what the context says: \"All requests must be fulfilled within 30 calendar days.\" No other claims are made, so the answer is fully supported.",
+      "latency_seconds": 9.477412625041325,
+      "failure_cause": null,
+      "retrieved_context": [
+        "Data Subject Rights:\n  Individuals have the right to: access their data, correct inaccurate data, request deletion\n  (\"right to be forgotten\"), restrict processing, data portability, and object to processing.\n  All requests must be fulfilled within 30 calendar days. Requests should be submitted to\n  privacy@acme.com. Identity verification is required before processing any access request.\n\nData Processing Basis:\n  ACME processes personal data under the following lawful bases:\n  - Contract performance (employee and customer contracts)\n  - Legitimate interests (fraud prevention, security monitoring)\n  - Consent (marketing communications)\n  - Legal obligation (financial and tax records)\n\nCross-Border Data Transfers:\n  Data may only be transferred outside the EEA using approved mechanisms: Standard Contractual\n  Clauses (SCCs), adequacy decisions, or Binding Corporate Rules (BCRs). All cross-border\n  transfers must be approved by the Data Protection Officer (DPO) at dpo@acme.com.",
+        "Data Subject Rights:\n  Individuals have the right to: access their data, correct inaccurate data, request deletion\n  (\"right to be forgotten\"), restrict processing, data portability, and object to processing.\n  All requests must be fulfilled within 30 calendar days. Requests should be submitted to\n  privacy@acme.com. Identity verification is required before processing any access request.\n\nData Processing Basis:\n  ACME processes personal data under the following lawful bases:\n  - Contract performance (employee and customer contracts)\n  - Legitimate interests (fraud prevention, security monitoring)\n  - Consent (marketing communications)\n  - Legal obligation (financial and tax records)\n\nCross-Border Data Transfers:\n  Data may only be transferred outside the EEA using approved mechanisms: Standard Contractual\n  Clauses (SCCs), adequacy decisions, or Binding Corporate Rules (BCRs). All cross-border\n  transfers must be approved by the Data Protection Officer (DPO) at dpo@acme.com.",
+        "Response SLAs:\n  P1: Incident response team engaged within 15 minutes; containment within 1 hour\n  P2: Acknowledgment within 1 hour; containment within 4 hours\n  P3: Acknowledgment within 4 hours; remediation within 72 hours\n  P4: Acknowledgment within 1 business day; remediation within 2 weeks\n\nRegulatory Notification Requirements:\n  - GDPR: Supervisory authority must be notified within 72 hours of a breach involving\n    personal data (Article 33). Affected individuals notified without undue delay if risk is high.\n  - Financial data breach: SEC/FinCEN notification within 30 days (if applicable)\n  - State breach notification: varies by state (14\u201390 days depending on jurisdiction)\n\nReport an incident to: security@acme.com or call the 24/7 Security Hotline: 1-800-555-CERT\n\n4. THIRD-PARTY VENDOR MANAGEMENT\n-----------------------------------\nAll third-party vendors with access to ACME systems or data must complete the vendor\napproval process before engagement.",
+        "Response SLAs:\n  P1: Incident response team engaged within 15 minutes; containment within 1 hour\n  P2: Acknowledgment within 1 hour; containment within 4 hours\n  P3: Acknowledgment within 4 hours; remediation within 72 hours\n  P4: Acknowledgment within 1 business day; remediation within 2 weeks\n\nRegulatory Notification Requirements:\n  - GDPR: Supervisory authority must be notified within 72 hours of a breach involving\n    personal data (Article 33). Affected individuals notified without undue delay if risk is high.\n  - Financial data breach: SEC/FinCEN notification within 30 days (if applicable)\n  - State breach notification: varies by state (14\u201390 days depending on jurisdiction)\n\nReport an incident to: security@acme.com or call the 24/7 Security Hotline: 1-800-555-CERT\n\n4. THIRD-PARTY VENDOR MANAGEMENT\n-----------------------------------\nAll third-party vendors with access to ACME systems or data must complete the vendor\napproval process before engagement."
+      ]
+    },
+    {
+      "id": "compliance-critical-finding",
+      "category": "direct",
+      "question": "What is the remediation deadline for a critical internal audit finding?",
+      "expected_namespaces": [
+        "Compliance"
+      ],
+      "expected_sources": [
+        "compliance_manual.txt"
+      ],
+      "expected_keywords": [
+        "30 days",
+        "Critical"
+      ],
+      "answerable": true,
+      "selected_namespaces": [
+        "Compliance"
+      ],
+      "route_correct": true,
+      "retrieved_sources": [
+        "compliance_manual.txt"
+      ],
+      "source_hit": true,
+      "retrieval_score": 0.94165415,
+      "refused": false,
+      "refusal_correct": true,
+      "answer": "The remediation deadline for a critical internal audit finding is **within 30 days** of the finding being identified. [1]",
+      "keyword_coverage": 1.0,
+      "citation_valid": true,
+      "faithfulness": 1.0,
+      "faithfulness_explanation": "The answer states that critical internal audit findings must be remediated within 30 days, which matches the context that says \"Critical findings must be remediated within 30 days.\" All factual claims are supported.",
+      "latency_seconds": 11.095129791006912,
+      "failure_cause": null,
+      "retrieved_context": [
+        "Ongoing Monitoring:\n  - All vendors are reviewed annually\n  - Critical vendors (Tier 1) undergo on-site or third-party audit every 2 years\n  - Vendors must notify ACME within 24 hours of any security incident that may affect ACME data\n  - Vendors failing re-assessment must remediate within 90 days or face contract termination\n\n5. AUDIT AND COMPLIANCE MONITORING\n-------------------------------------\nInternal Audits:\n  - Conducted quarterly by the Internal Audit team\n  - Scope: access reviews, policy compliance, financial controls, IT general controls\n  - Findings rated: Critical, High, Medium, Low\n  - Critical findings must be remediated within 30 days\n\nExternal Audits:\n  - Annual SOC 2 Type II audit by an accredited CPA firm (currently Deloitte)\n  - Annual ISO 27001 surveillance audit\n  - Penetration testing conducted twice per year by an approved third party\n  - Results of external audits are presented to the Board of Directors",
+        "Ongoing Monitoring:\n  - All vendors are reviewed annually\n  - Critical vendors (Tier 1) undergo on-site or third-party audit every 2 years\n  - Vendors must notify ACME within 24 hours of any security incident that may affect ACME data\n  - Vendors failing re-assessment must remediate within 90 days or face contract termination\n\n5. AUDIT AND COMPLIANCE MONITORING\n-------------------------------------\nInternal Audits:\n  - Conducted quarterly by the Internal Audit team\n  - Scope: access reviews, policy compliance, financial controls, IT general controls\n  - Findings rated: Critical, High, Medium, Low\n  - Critical findings must be remediated within 30 days\n\nExternal Audits:\n  - Annual SOC 2 Type II audit by an accredited CPA firm (currently Deloitte)\n  - Annual ISO 27001 surveillance audit\n  - Penetration testing conducted twice per year by an approved third party\n  - Results of external audits are presented to the Board of Directors",
+        "Response SLAs:\n  P1: Incident response team engaged within 15 minutes; containment within 1 hour\n  P2: Acknowledgment within 1 hour; containment within 4 hours\n  P3: Acknowledgment within 4 hours; remediation within 72 hours\n  P4: Acknowledgment within 1 business day; remediation within 2 weeks\n\nRegulatory Notification Requirements:\n  - GDPR: Supervisory authority must be notified within 72 hours of a breach involving\n    personal data (Article 33). Affected individuals notified without undue delay if risk is high.\n  - Financial data breach: SEC/FinCEN notification within 30 days (if applicable)\n  - State breach notification: varies by state (14\u201390 days depending on jurisdiction)\n\nReport an incident to: security@acme.com or call the 24/7 Security Hotline: 1-800-555-CERT\n\n4. THIRD-PARTY VENDOR MANAGEMENT\n-----------------------------------\nAll third-party vendors with access to ACME systems or data must complete the vendor\napproval process before engagement.",
+        "Response SLAs:\n  P1: Incident response team engaged within 15 minutes; containment within 1 hour\n  P2: Acknowledgment within 1 hour; containment within 4 hours\n  P3: Acknowledgment within 4 hours; remediation within 72 hours\n  P4: Acknowledgment within 1 business day; remediation within 2 weeks\n\nRegulatory Notification Requirements:\n  - GDPR: Supervisory authority must be notified within 72 hours of a breach involving\n    personal data (Article 33). Affected individuals notified without undue delay if risk is high.\n  - Financial data breach: SEC/FinCEN notification within 30 days (if applicable)\n  - State breach notification: varies by state (14\u201390 days depending on jurisdiction)\n\nReport an incident to: security@acme.com or call the 24/7 Security Hotline: 1-800-555-CERT\n\n4. THIRD-PARTY VENDOR MANAGEMENT\n-----------------------------------\nAll third-party vendors with access to ACME systems or data must complete the vendor\napproval process before engagement."
+      ]
+    },
+    {
+      "id": "cross-p1-response",
+      "category": "cross-document",
+      "question": "Compare the documented response expectations for a P1 incident across the technical SLA and compliance incident policy.",
+      "expected_namespaces": [
+        "Technical",
+        "Compliance"
+      ],
+      "expected_sources": [
+        "tech_docs.txt",
+        "compliance_manual.txt"
+      ],
+      "expected_keywords": [
+        "15 minutes",
+        "containment",
+        "1 hour"
+      ],
+      "answerable": true,
+      "selected_namespaces": [
+        "HR",
+        "Technical",
+        "Compliance"
+      ],
+      "route_correct": true,
+      "retrieved_sources": [
+        "compliance_manual.txt",
+        "tech_docs.txt"
+      ],
+      "source_hit": true,
+      "retrieval_score": 0.3624049,
+      "refused": false,
+      "refusal_correct": true,
+      "answer": "**Technical SLA (source\u202f[1])**  \n- A P1 incident must be **acknowledged within 15\u202fminutes** of detection.\n\n**Compliance Incident Policy (source\u202f[2])**  \n- A P1 incident requires the **incident\u2011response team to be engaged within 15\u202fminutes** (effectively the same acknowledgment requirement).  \n- In addition, the policy mandates **containment of the incident within 1\u202fhour**.\n\n**Comparison**  \n- Both documents agree that a P1 incident must be acknowledged/engaged within 15\u202fminutes.  \n- The compliance policy adds an extra expectation\u2014containment within 1\u202fhour\u2014that is not specified in the technical SLA.",
+      "keyword_coverage": 1.0,
+      "citation_valid": true,
+      "faithfulness": 1.0,
+      "faithfulness_explanation": "All factual claims in the answer are directly supported by the supplied context. The answer accurately reflects the 15\u2011minute acknowledgment requirement and the 1\u2011hour containment requirement from the Response SLAs, and correctly notes that the technical SLA does not mention containment. No unsupported or contradictory statements are present.",
+      "latency_seconds": 12.983281499997247,
+      "failure_cause": null,
+      "retrieved_context": [
+        "Example (Python):\n    from acme_sdk import AcmeClient\n    client = AcmeClient(api_key=\"your_key\")\n    response = client.data.query(filter={\"status\": \"active\"})\n\n9. SLA AND UPTIME\n-----------------\nACME guarantees the following SLAs:\n  - API availability: 99.9% uptime per calendar month\n  - API latency (p95): < 200ms for standard endpoints\n  - Incident response: P1 incidents acknowledged within 15 minutes\n  - Maintenance windows: Sundays 02:00\u201304:00 UTC (announced 48h in advance)\n\nMonitor real-time status at: https://status.acme.com",
+        "Response SLAs:\n  P1: Incident response team engaged within 15 minutes; containment within 1 hour\n  P2: Acknowledgment within 1 hour; containment within 4 hours\n  P3: Acknowledgment within 4 hours; remediation within 72 hours\n  P4: Acknowledgment within 1 business day; remediation within 2 weeks\n\nRegulatory Notification Requirements:\n  - GDPR: Supervisory authority must be notified within 72 hours of a breach involving\n    personal data (Article 33). Affected individuals notified without undue delay if risk is high.\n  - Financial data breach: SEC/FinCEN notification within 30 days (if applicable)\n  - State breach notification: varies by state (14\u201390 days depending on jurisdiction)\n\nReport an incident to: security@acme.com or call the 24/7 Security Hotline: 1-800-555-CERT\n\n4. THIRD-PARTY VENDOR MANAGEMENT\n-----------------------------------\nAll third-party vendors with access to ACME systems or data must complete the vendor\napproval process before engagement.",
+        "Response SLAs:\n  P1: Incident response team engaged within 15 minutes; containment within 1 hour\n  P2: Acknowledgment within 1 hour; containment within 4 hours\n  P3: Acknowledgment within 4 hours; remediation within 72 hours\n  P4: Acknowledgment within 1 business day; remediation within 2 weeks\n\nRegulatory Notification Requirements:\n  - GDPR: Supervisory authority must be notified within 72 hours of a breach involving\n    personal data (Article 33). Affected individuals notified without undue delay if risk is high.\n  - Financial data breach: SEC/FinCEN notification within 30 days (if applicable)\n  - State breach notification: varies by state (14\u201390 days depending on jurisdiction)\n\nReport an incident to: security@acme.com or call the 24/7 Security Hotline: 1-800-555-CERT\n\n4. THIRD-PARTY VENDOR MANAGEMENT\n-----------------------------------\nAll third-party vendors with access to ACME systems or data must complete the vendor\napproval process before engagement.",
+        "Encryption:\n  - All data in transit must use TLS 1.2 or higher\n  - All data at rest encrypted using AES-256\n  - Encryption keys managed via AWS KMS; rotated annually\n  - Laptops must have full-disk encryption enabled (BitLocker for Windows, FileVault for Mac)\n\n3. INCIDENT RESPONSE POLICY\n-----------------------------\nACME follows a structured incident response process based on NIST SP 800-61.\n\nIncident Classification:\n  P1 (Critical): Active breach, ransomware, or data exfiltration in progress\n  P2 (High):     Confirmed unauthorized access, significant data exposure risk\n  P3 (Medium):   Suspicious activity, potential vulnerability exploitation\n  P4 (Low):      Policy violations, minor security misconfigurations"
+      ]
+    },
+    {
+      "id": "cross-credential-security",
+      "category": "cross-document",
+      "question": "What do the technical and security policies require for protecting application credentials and privileged access?",
+      "expected_namespaces": [
+        "Technical",
+        "Compliance"
+      ],
+      "expected_sources": [
+        "tech_docs.txt",
+        "compliance_manual.txt"
+      ],
+      "expected_keywords": [
+        "environment variables",
+        "MFA",
+        "least privilege"
+      ],
+      "answerable": true,
+      "selected_namespaces": [
+        "HR",
+        "Technical",
+        "Compliance"
+      ],
+      "route_correct": true,
+      "retrieved_sources": [
+        "compliance_manual.txt",
+        "tech_docs.txt"
+      ],
+      "source_hit": true,
+      "retrieval_score": 0.08359067,
+      "refused": false,
+      "refusal_correct": true,
+      "answer": "**Application credentials**\n\n- The ACME API uses OAuth\u202f2.0 with Bearer\u2011token authentication.  \n- Application secrets (CLIENT_ID, CLIENT_SECRET) must **not** be exposed in client\u2011side code; they should be stored in environment variables or other secure vaults.  \n- Tokens are short\u2011lived (3600\u202fs) and must be refreshed with a refresh token that is valid for 30\u202fdays.  \n- The refresh token is used to obtain a new access token before the current one expires.  \n\n[1]\n\n**Privileged access**\n\n- All privileged (admin/root) access requires **Multi\u2011Factor Authentication (MFA)**.  \n- Access is governed by the principle of least privilege and is reviewed and recertified **quarterly**.  \n- When an employee is terminated, their privileged access is revoked within **2\u202fhours** of HR notification.  \n- Shared or generic accounts are prohibited; every account must be individual and auditable.  \n\n[2]",
+      "keyword_coverage": 1.0,
+      "citation_valid": true,
+      "faithfulness": 1.0,
+      "faithfulness_explanation": "All factual claims in the answer are directly supported by the provided context. The answer accurately reflects the API authentication details, token lifetimes, secret handling, and privileged access policies, including MFA requirement, least privilege principle, quarterly review, 2\u2011hour revocation for terminated employees, and prohibition of shared accounts. No unsupported or contradictory statements are present.",
+      "latency_seconds": 8.93238516699057,
+      "failure_cause": null,
+      "retrieved_context": [
+        "ACME PLATFORM \u2014 TECHNICAL DOCUMENTATION\nVersion 3.1 | Last Updated: March 2024\n=======================================\n\n1. API AUTHENTICATION\n---------------------\nThe ACME API uses OAuth 2.0 with Bearer Token authentication. All API requests must include\na valid Bearer token in the Authorization header:\n\n    Authorization: Bearer <your_access_token>\n\nTo obtain an access token:\n  1. Register your application at https://developer.acme.com/apps\n  2. Note your CLIENT_ID and CLIENT_SECRET\n  3. Make a POST request to https://api.acme.com/oauth/token with:\n       grant_type=client_credentials\n       client_id=<CLIENT_ID>\n       client_secret=<CLIENT_SECRET>\n  4. The response returns an access_token (valid for 3600 seconds) and a refresh_token.\n  5. Use the refresh_token to obtain a new access_token before expiry.\n\nTokens expire after 1 hour. Refresh tokens are valid for 30 days. Do not expose secrets\nin client-side code. Use environment variables to store credentials.",
+        "Data Protection Officer (DPO): Jane Smith | dpo@acme.com | +1-800-555-0199\n\n2. INFORMATION SECURITY POLICY\n---------------------------------\nACME maintains SOC 2 Type II certification and ISO 27001 accreditation.\n\nAccess Control:\n  - All systems access follows the principle of least privilege\n  - Privileged access (admin/root) requires Multi-Factor Authentication (MFA)\n  - Access is reviewed and recertified quarterly\n  - Terminated employee access is revoked within 2 hours of HR notification\n  - Shared/generic accounts are prohibited; all access must be individual and auditable\n\nPassword Policy:\n  - Minimum 12 characters\n  - Must include uppercase, lowercase, number, and special character\n  - Passwords expire every 90 days\n  - Last 12 passwords may not be reused\n  - Password manager (1Password) is provided to all employees",
+        "Data Protection Officer (DPO): Jane Smith | dpo@acme.com | +1-800-555-0199\n\n2. INFORMATION SECURITY POLICY\n---------------------------------\nACME maintains SOC 2 Type II certification and ISO 27001 accreditation.\n\nAccess Control:\n  - All systems access follows the principle of least privilege\n  - Privileged access (admin/root) requires Multi-Factor Authentication (MFA)\n  - Access is reviewed and recertified quarterly\n  - Terminated employee access is revoked within 2 hours of HR notification\n  - Shared/generic accounts are prohibited; all access must be individual and auditable\n\nPassword Policy:\n  - Minimum 12 characters\n  - Must include uppercase, lowercase, number, and special character\n  - Passwords expire every 90 days\n  - Last 12 passwords may not be reused\n  - Password manager (1Password) is provided to all employees",
+        "Encryption:\n  - All data in transit must use TLS 1.2 or higher\n  - All data at rest encrypted using AES-256\n  - Encryption keys managed via AWS KMS; rotated annually\n  - Laptops must have full-disk encryption enabled (BitLocker for Windows, FileVault for Mac)\n\n3. INCIDENT RESPONSE POLICY\n-----------------------------\nACME follows a structured incident response process based on NIST SP 800-61.\n\nIncident Classification:\n  P1 (Critical): Active breach, ransomware, or data exfiltration in progress\n  P2 (High):     Confirmed unauthorized access, significant data exposure risk\n  P3 (Medium):   Suspicious activity, potential vulnerability exploitation\n  P4 (Low):      Policy violations, minor security misconfigurations"
+      ]
+    },
+    {
+      "id": "ambiguous-retention",
+      "category": "ambiguous",
+      "question": "How long does ACME keep records?",
+      "expected_namespaces": [
+        "Compliance"
+      ],
+      "expected_sources": [
+        "compliance_manual.txt"
+      ],
+      "expected_keywords": [
+        "depends",
+        "years"
+      ],
+      "answerable": true,
+      "selected_namespaces": [
+        "Compliance"
+      ],
+      "route_correct": true,
+      "retrieved_sources": [
+        "compliance_manual.txt"
+      ],
+      "source_hit": true,
+      "retrieval_score": 0.9905143,
+      "refused": false,
+      "refusal_correct": true,
+      "answer": "ACME\u2019s compliance manual specifies the following retention periods for its records:\n\n| Record type | Retention period |\n|-------------|------------------|\n| Employee personal data | 3\u202fyears after the end of employment |\n| Customer transaction records | 7\u202fyears (per financial regulatory requirement) |\n| System audit logs | 2\u202fyears |\n| Marketing consent records | 3\u202fyears after consent withdrawal |\n| Support ticket data | 2\u202fyears after ticket closure |\n| Recruitment data (unsuccessful candidates) | 6\u202fmonths after the decision |\n\nAdditionally, audit\u2011related evidence must be kept for at least 3\u202fyears\u202f[1][3].",
+      "keyword_coverage": 0.5,
+      "citation_valid": true,
+      "faithfulness": 1.0,
+      "faithfulness_explanation": "The answer accurately reproduces all retention periods listed in the context and correctly states that audit evidence must be retained for at least 3 years, which is also stated in the context. No unsupported or contradictory claims are present.",
+      "latency_seconds": 12.680316250014585,
+      "failure_cause": null,
+      "retrieved_context": [
+        "ACME CORPORATION \u2014 COMPLIANCE AND SECURITY MANUAL\nVersion 2.5 | Effective Date: January 1, 2024\n===================================================\n\n1. DATA PRIVACY AND GDPR COMPLIANCE\n--------------------------------------\nACME Corporation is committed to full compliance with the General Data Protection Regulation\n(GDPR) and applicable data protection laws. The following policies govern data handling:\n\nData Retention Schedules:\n  - Employee personal data:        3 years after end of employment\n  - Customer transaction records:  7 years (financial regulatory requirement)\n  - System audit logs:             2 years\n  - Marketing consent records:     3 years after consent withdrawal\n  - Support ticket data:           2 years after ticket closure\n  - Recruitment data (unsuccessful): 6 months after decision",
+        "ACME CORPORATION \u2014 COMPLIANCE AND SECURITY MANUAL\nVersion 2.5 | Effective Date: January 1, 2024\n===================================================\n\n1. DATA PRIVACY AND GDPR COMPLIANCE\n--------------------------------------\nACME Corporation is committed to full compliance with the General Data Protection Regulation\n(GDPR) and applicable data protection laws. The following policies govern data handling:\n\nData Retention Schedules:\n  - Employee personal data:        3 years after end of employment\n  - Customer transaction records:  7 years (financial regulatory requirement)\n  - System audit logs:             2 years\n  - Marketing consent records:     3 years after consent withdrawal\n  - Support ticket data:           2 years after ticket closure\n  - Recruitment data (unsuccessful): 6 months after decision",
+        "Audit Readiness:\n  - All employees must cooperate with audit requests\n  - Evidence must be retained for a minimum of 3 years\n  - Audit logs must not be modified or deleted; violations are treated as P2 incidents\n\n6. ACCEPTABLE USE POLICY\n--------------------------\nACME corporate systems (laptops, email, cloud services) are provided for business use.\nLimited personal use is permitted provided it does not:\n  - Violate any law or regulation\n  - Consume excessive bandwidth or storage\n  - Expose ACME systems to security risks\n  - Involve streaming, gaming, or cryptocurrency mining\n\nProhibited uses include: accessing or sharing illegal content, installing unlicensed software,\ncircumventing security controls (VPN bypass, disabling endpoint protection), storing sensitive\ndata on personal devices, and using personal email for business communications.",
+        "Audit Readiness:\n  - All employees must cooperate with audit requests\n  - Evidence must be retained for a minimum of 3 years\n  - Audit logs must not be modified or deleted; violations are treated as P2 incidents\n\n6. ACCEPTABLE USE POLICY\n--------------------------\nACME corporate systems (laptops, email, cloud services) are provided for business use.\nLimited personal use is permitted provided it does not:\n  - Violate any law or regulation\n  - Consume excessive bandwidth or storage\n  - Expose ACME systems to security risks\n  - Involve streaming, gaming, or cryptocurrency mining\n\nProhibited uses include: accessing or sharing illegal content, installing unlicensed software,\ncircumventing security controls (VPN bypass, disabling endpoint protection), storing sensitive\ndata on personal devices, and using personal email for business communications."
+      ]
+    },
+    {
+      "id": "ambiguous-work-home",
+      "category": "ambiguous",
+      "question": "Can I work from home?",
+      "expected_namespaces": [
+        "HR"
+      ],
+      "expected_sources": [
+        "hr_policy.txt"
+      ],
+      "expected_keywords": [
+        "3 days",
+        "6-month",
+        "manager"
+      ],
+      "answerable": true,
+      "selected_namespaces": [
+        "HR"
+      ],
+      "route_correct": true,
+      "retrieved_sources": [
+        "hr_policy.txt"
+      ],
+      "source_hit": true,
+      "retrieval_score": 0.3986405,
+      "refused": false,
+      "refusal_correct": true,
+      "answer": "Yes\u2014after you finish your 6\u2011month probationary period you\u2019re eligible to work remotely. You can work from home up to **3 days per week** (full\u2011time remote arrangements require VP\u2011level approval and are reviewed annually). Each remote day must be agreed with your direct manager in advance, and you must keep the core working hours of 10:00\u202fAM\u202f\u2013\u202f3:00\u202fPM (local time) and be reachable on Slack during that window. Remote work from outside your country of employment also requires prior written approval from HR and Legal. [1]",
+      "keyword_coverage": 1.0,
+      "citation_valid": true,
+      "faithfulness": 1.0,
+      "faithfulness_explanation": "All factual claims in the answer are directly supported by the provided remote work policy text. The answer correctly states the 6\u2011month probation requirement, the 3\u2011day\u2011per\u2011week limit, the need for manager approval, core hours, Slack availability, VP approval for full\u2011time remote, annual review, and the requirement for written approval to work outside the country. No claim contradicts or is unsupported by the context.",
+      "latency_seconds": 13.580570041027386,
+      "failure_cause": null,
+      "retrieved_context": [
+        "4. REMOTE WORK POLICY\n---------------------\nEmployees may work remotely up to 3 days per week after completing their 6-month probationary\nperiod. Remote work days must be agreed upon with the direct manager in advance.\nThe employee is responsible for maintaining a safe, ergonomic, and distraction-free workspace.\nCore working hours of 10:00 AM \u2013 3:00 PM (local time) must be maintained regardless of location.\nEmployees working remotely must be reachable via Slack and respond within 30 minutes during\ncore hours. Fully remote arrangements (5 days/week) require VP-level approval and are reviewed\nannually. Employees cannot work remotely from outside their country of employment without\nprior written approval from HR and Legal.",
+        "4. REMOTE WORK POLICY\n---------------------\nEmployees may work remotely up to 3 days per week after completing their 6-month probationary\nperiod. Remote work days must be agreed upon with the direct manager in advance.\nThe employee is responsible for maintaining a safe, ergonomic, and distraction-free workspace.\nCore working hours of 10:00 AM \u2013 3:00 PM (local time) must be maintained regardless of location.\nEmployees working remotely must be reachable via Slack and respond within 30 minutes during\ncore hours. Fully remote arrangements (5 days/week) require VP-level approval and are reviewed\nannually. Employees cannot work remotely from outside their country of employment without\nprior written approval from HR and Legal.",
+        "Employee Assistance Program (EAP): All employees have access to 6 free counseling sessions\nper year through the EAP. Contact: eap@acme.com or 1-800-555-HELP.\n\n8. ONBOARDING PROCESS\n----------------------\nNew employees go through a structured 30-60-90 day onboarding plan:\n- Day 1: IT setup, security training, HR orientation\n- Week 1: Meet the team, review team OKRs, complete compliance modules\n- Month 1: Shadow key meetings, complete assigned onboarding tasks\n- Day 60: First check-in meeting with manager and HR\n- Day 90: Probationary period ends; remote work eligibility begins\n\n9. DISCIPLINARY POLICY\n-----------------------\nACME follows a progressive disciplinary process:\nStep 1: Verbal Warning (documented in HR system)\nStep 2: Written Warning\nStep 3: Final Written Warning / Suspension (with or without pay)\nStep 4: Termination\nSerious misconduct (fraud, violence, data theft) may result in immediate termination\nwithout progression through the steps above.",
+        "Employee Assistance Program (EAP): All employees have access to 6 free counseling sessions\nper year through the EAP. Contact: eap@acme.com or 1-800-555-HELP.\n\n8. ONBOARDING PROCESS\n----------------------\nNew employees go through a structured 30-60-90 day onboarding plan:\n- Day 1: IT setup, security training, HR orientation\n- Week 1: Meet the team, review team OKRs, complete compliance modules\n- Month 1: Shadow key meetings, complete assigned onboarding tasks\n- Day 60: First check-in meeting with manager and HR\n- Day 90: Probationary period ends; remote work eligibility begins\n\n9. DISCIPLINARY POLICY\n-----------------------\nACME follows a progressive disciplinary process:\nStep 1: Verbal Warning (documented in HR system)\nStep 2: Written Warning\nStep 3: Final Written Warning / Suspension (with or without pay)\nStep 4: Termination\nSerious misconduct (fraud, violence, data theft) may result in immediate termination\nwithout progression through the steps above."
+      ]
+    },
+    {
+      "id": "unknown-cafeteria",
+      "category": "unanswerable",
+      "question": "What time does the employee cafeteria open on Saturdays?",
+      "expected_namespaces": [],
+      "expected_sources": [],
+      "expected_keywords": [],
+      "answerable": false,
+      "selected_namespaces": [
+        "HR"
+      ],
+      "route_correct": true,
+      "retrieved_sources": [],
+      "source_hit": true,
+      "retrieval_score": 0.0027469008,
+      "refused": true,
+      "refusal_correct": true,
+      "answer": "I couldn't find sufficiently relevant information in the indexed company documents to answer that question. Try rephrasing it or ask about HR, technical, or compliance topics.",
+      "keyword_coverage": 1.0,
+      "citation_valid": true,
+      "faithfulness": null,
+      "faithfulness_explanation": null,
+      "latency_seconds": 4.768736750003882,
+      "failure_cause": null
+    },
+    {
+      "id": "unknown-travel",
+      "category": "unanswerable",
+      "question": "What is the maximum hotel reimbursement for business travel?",
+      "expected_namespaces": [],
+      "expected_sources": [],
+      "expected_keywords": [],
+      "answerable": false,
+      "selected_namespaces": [
+        "HR"
+      ],
+      "route_correct": true,
+      "retrieved_sources": [],
+      "source_hit": true,
+      "retrieval_score": 0.001032231,
+      "refused": true,
+      "refusal_correct": true,
+      "answer": "I couldn't find sufficiently relevant information in the indexed company documents to answer that question. Try rephrasing it or ask about HR, technical, or compliance topics.",
+      "keyword_coverage": 1.0,
+      "citation_valid": true,
+      "faithfulness": null,
+      "faithfulness_explanation": null,
+      "latency_seconds": 3.0496734580374323,
+      "failure_cause": null
+    },
+    {
+      "id": "compliance-access-revocation",
+      "category": "direct",
+      "question": "How soon must a terminated employee's system access be revoked?",
+      "expected_namespaces": [
+        "Compliance"
+      ],
+      "expected_sources": [
+        "compliance_manual.txt"
+      ],
+      "expected_keywords": [
+        "2 hours",
+        "HR notification"
+      ],
+      "answerable": true,
+      "selected_namespaces": [
+        "HR",
+        "Technical",
+        "Compliance"
+      ],
+      "route_correct": true,
+      "retrieved_sources": [
+        "compliance_manual.txt"
+      ],
+      "retrieved_context": [
+        "Data Protection Officer (DPO): Jane Smith | dpo@acme.com | +1-800-555-0199\n\n2. INFORMATION SECURITY POLICY\n---------------------------------\nACME maintains SOC 2 Type II certification and ISO 27001 accreditation.\n\nAccess Control:\n  - All systems access follows the principle of least privilege\n  - Privileged access (admin/root) requires Multi-Factor Authentication (MFA)\n  - Access is reviewed and recertified quarterly\n  - Terminated employee access is revoked within 2 hours of HR notification\n  - Shared/generic accounts are prohibited; all access must be individual and auditable\n\nPassword Policy:\n  - Minimum 12 characters\n  - Must include uppercase, lowercase, number, and special character\n  - Passwords expire every 90 days\n  - Last 12 passwords may not be reused\n  - Password manager (1Password) is provided to all employees",
+        "Data Protection Officer (DPO): Jane Smith | dpo@acme.com | +1-800-555-0199\n\n2. INFORMATION SECURITY POLICY\n---------------------------------\nACME maintains SOC 2 Type II certification and ISO 27001 accreditation.\n\nAccess Control:\n  - All systems access follows the principle of least privilege\n  - Privileged access (admin/root) requires Multi-Factor Authentication (MFA)\n  - Access is reviewed and recertified quarterly\n  - Terminated employee access is revoked within 2 hours of HR notification\n  - Shared/generic accounts are prohibited; all access must be individual and auditable\n\nPassword Policy:\n  - Minimum 12 characters\n  - Must include uppercase, lowercase, number, and special character\n  - Passwords expire every 90 days\n  - Last 12 passwords may not be reused\n  - Password manager (1Password) is provided to all employees",
+        "ACME CORPORATION \u2014 COMPLIANCE AND SECURITY MANUAL\nVersion 2.5 | Effective Date: January 1, 2024\n===================================================\n\n1. DATA PRIVACY AND GDPR COMPLIANCE\n--------------------------------------\nACME Corporation is committed to full compliance with the General Data Protection Regulation\n(GDPR) and applicable data protection laws. The following policies govern data handling:\n\nData Retention Schedules:\n  - Employee personal data:        3 years after end of employment\n  - Customer transaction records:  7 years (financial regulatory requirement)\n  - System audit logs:             2 years\n  - Marketing consent records:     3 years after consent withdrawal\n  - Support ticket data:           2 years after ticket closure\n  - Recruitment data (unsuccessful): 6 months after decision",
+        "Ongoing Monitoring:\n  - All vendors are reviewed annually\n  - Critical vendors (Tier 1) undergo on-site or third-party audit every 2 years\n  - Vendors must notify ACME within 24 hours of any security incident that may affect ACME data\n  - Vendors failing re-assessment must remediate within 90 days or face contract termination\n\n5. AUDIT AND COMPLIANCE MONITORING\n-------------------------------------\nInternal Audits:\n  - Conducted quarterly by the Internal Audit team\n  - Scope: access reviews, policy compliance, financial controls, IT general controls\n  - Findings rated: Critical, High, Medium, Low\n  - Critical findings must be remediated within 30 days\n\nExternal Audits:\n  - Annual SOC 2 Type II audit by an accredited CPA firm (currently Deloitte)\n  - Annual ISO 27001 surveillance audit\n  - Penetration testing conducted twice per year by an approved third party\n  - Results of external audits are presented to the Board of Directors"
+      ],
+      "source_hit": true,
+      "retrieval_score": 0.97719735,
+      "refused": false,
+      "refusal_correct": true,
+      "answer": "A terminated employee\u2019s system access must be revoked within **2 hours** of HR notification. [1]",
+      "keyword_coverage": 1.0,
+      "citation_valid": true,
+      "faithfulness": 1.0,
+      "faithfulness_explanation": "The answer states that a terminated employee\u2019s system access must be revoked within 2 hours of HR notification. The supplied context explicitly contains the line \"Terminated employee access is revoked within 2 hours of HR notification\" under the Access Control section. Therefore, every factual claim in the answer is directly supported by the context.",
+      "latency_seconds": 2.565768582979217,
+      "failure_cause": null
+    }
+  ]
+}

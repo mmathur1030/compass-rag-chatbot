@@ -1,0 +1,212 @@
+[
+  {
+    "id": "hr-annual-leave",
+    "answerable": true,
+    "dense": {
+      "source_hit": true,
+      "top_score": 0.01639344262295082,
+      "latency_seconds": 0.7137832500156946
+    },
+    "hybrid": {
+      "source_hit": true,
+      "top_score": 0.01639344262295082,
+      "latency_seconds": 0.5798139580292627
+    }
+  },
+  {
+    "id": "hr-cross-border-remote",
+    "answerable": true,
+    "dense": {
+      "source_hit": true,
+      "top_score": 0.01639344262295082,
+      "latency_seconds": 0.2678831659723073
+    },
+    "hybrid": {
+      "source_hit": true,
+      "top_score": 0.01639344262295082,
+      "latency_seconds": 0.47959112498210743
+    }
+  },
+  {
+    "id": "hr-parental-leave",
+    "answerable": true,
+    "dense": {
+      "source_hit": true,
+      "top_score": 0.01639344262295082,
+      "latency_seconds": 0.22335699998075143
+    },
+    "hybrid": {
+      "source_hit": true,
+      "top_score": 0.01639344262295082,
+      "latency_seconds": 0.21303666703170165
+    }
+  },
+  {
+    "id": "tech-rate-limit",
+    "answerable": true,
+    "dense": {
+      "source_hit": true,
+      "top_score": 0.01639344262295082,
+      "latency_seconds": 0.3639731250004843
+    },
+    "hybrid": {
+      "source_hit": true,
+      "top_score": 0.01639344262295082,
+      "latency_seconds": 0.20711250003660098
+    }
+  },
+  {
+    "id": "tech-webhook-signature",
+    "answerable": true,
+    "dense": {
+      "source_hit": true,
+      "top_score": 0.01639344262295082,
+      "latency_seconds": 0.20769712497713044
+    },
+    "hybrid": {
+      "source_hit": true,
+      "top_score": 0.01639344262295082,
+      "latency_seconds": 0.1713566659600474
+    }
+  },
+  {
+    "id": "tech-production-deploy",
+    "answerable": true,
+    "dense": {
+      "source_hit": true,
+      "top_score": 0.01639344262295082,
+      "latency_seconds": 0.16568274999735877
+    },
+    "hybrid": {
+      "source_hit": true,
+      "top_score": 0.01639344262295082,
+      "latency_seconds": 0.16740274999756366
+    }
+  },
+  {
+    "id": "compliance-data-request",
+    "answerable": true,
+    "dense": {
+      "source_hit": true,
+      "top_score": 0.01639344262295082,
+      "latency_seconds": 0.3286287499940954
+    },
+    "hybrid": {
+      "source_hit": true,
+      "top_score": 0.01639344262295082,
+      "latency_seconds": 0.2247167500318028
+    }
+  },
+  {
+    "id": "compliance-access-revocation",
+    "answerable": true,
+    "dense": {
+      "source_hit": true,
+      "top_score": 0.01639344262295082,
+      "latency_seconds": 0.23460091603919864
+    },
+    "hybrid": {
+      "source_hit": true,
+      "top_score": 0.01639344262295082,
+      "latency_seconds": 0.22660950000863522
+    }
+  },
+  {
+    "id": "compliance-critical-finding",
+    "answerable": true,
+    "dense": {
+      "source_hit": true,
+      "top_score": 0.01639344262295082,
+      "latency_seconds": 0.2023130840389058
+    },
+    "hybrid": {
+      "source_hit": true,
+      "top_score": 0.01639344262295082,
+      "latency_seconds": 0.2146500420058146
+    }
+  },
+  {
+    "id": "cross-p1-response",
+    "answerable": true,
+    "dense": {
+      "source_hit": true,
+      "top_score": 0.01639344262295082,
+      "latency_seconds": 0.3500719160074368
+    },
+    "hybrid": {
+      "source_hit": true,
+      "top_score": 0.01639344262295082,
+      "latency_seconds": 0.602700499992352
+    }
+  },
+  {
+    "id": "cross-credential-security",
+    "answerable": true,
+    "dense": {
+      "source_hit": true,
+      "top_score": 0.01639344262295082,
+      "latency_seconds": 0.4171485000406392
+    },
+    "hybrid": {
+      "source_hit": true,
+      "top_score": 0.01639344262295082,
+      "latency_seconds": 0.3354105839971453
+    }
+  },
+  {
+    "id": "ambiguous-retention",
+    "answerable": true,
+    "dense": {
+      "source_hit": true,
+      "top_score": 0.01639344262295082,
+      "latency_seconds": 0.2093060000333935
+    },
+    "hybrid": {
+      "source_hit": true,
+      "top_score": 0.01639344262295082,
+      "latency_seconds": 0.16545400000177324
+    }
+  },
+  {
+    "id": "ambiguous-work-home",
+    "answerable": true,
+    "dense": {
+      "source_hit": true,
+      "top_score": 0.01639344262295082,
+      "latency_seconds": 0.16710433299886063
+    },
+    "hybrid": {
+      "source_hit": true,
+      "top_score": 0.01639344262295082,
+      "latency_seconds": 0.18320191698148847
+    }
+  },
+  {
+    "id": "unknown-cafeteria",
+    "answerable": false,
+    "dense": {
+      "source_hit": true,
+      "top_score": 0.01639344262295082,
+      "latency_seconds": 0.5007655840017833
+    },
+    "hybrid": {
+      "source_hit": true,
+      "top_score": 0.01639344262295082,
+      "latency_seconds": 0.5557261250214651
+    }
+  },
+  {
+    "id": "unknown-travel",
+    "answerable": false,
+    "dense": {
+      "source_hit": true,
+      "top_score": 0.01639344262295082,
+      "latency_seconds": 0.579476999992039
+    },
+    "hybrid": {
+      "source_hit": true,
+      "top_score": 0.01639344262295082,
+      "latency_seconds": 0.725689249986317
+    }
+  }
+]

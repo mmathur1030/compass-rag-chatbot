@@ -1,0 +1,41 @@
+[project]
+name = "compass-rag"
+version = "0.1.0"
+description = "A minimal RAG chatbot built with LangChain and LangGraph"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "langchain>=1.0,<2",
+    "langchain-groq>=1.0,<2",
+    "langchain-pinecone>=0.2,<2",
+    "langchain-text-splitters>=1.0,<2",
+    "langgraph>=1.0,<2",
+    "pypdf>=5,<7",
+    "python-dotenv>=1.0,<2",
+    "streamlit>=1.40,<2",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8,<10",
+    "ruff>=0.11,<1",
+]
+
+[project.scripts]
+rag-chat = "rag_chatbot.cli:main"
+rag-evaluate = "rag_chatbot.evaluation:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/rag_chatbot"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+extend-exclude = [".uv-python"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
